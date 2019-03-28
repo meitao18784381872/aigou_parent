@@ -1,0 +1,8 @@
+#客户端做配置（到github上去拿配置文件）
+spring:
+  cloud:
+    config:
+      uri: http://127.0.0.1:1299 #配置服务器
+      label: master #分支
+      name: service_config_file #github上面名称,github上面的配置文件的名字必须加上yml（后缀）
+      profile: dev #配置中心文件上对应的两个环境

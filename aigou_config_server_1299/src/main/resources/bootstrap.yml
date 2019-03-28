@@ -1,0 +1,18 @@
+server:
+  port: 1299  #配置中心端口号
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka #服务注册中心
+  instance:
+    prefer-ip-address: true #页面端是否显示 Ip + 端口（服务注册中心）
+spring:
+  application:
+    name: aigou-config-server  #在服务中心的名字服务注册中心）
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/meitao18784381872/aigou_config.git  #github 中的仓库地址
+          username: meitao18784381872
+          password: meitao301716
